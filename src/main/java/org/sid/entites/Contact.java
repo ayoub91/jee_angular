@@ -23,7 +23,6 @@ public class Contact implements Serializable{
 	private Long id;
 	private String Nom;
 	private String Prenom;
-	
 	@Temporal(TemporalType.DATE)
 	private Date dateNaissance;
 	private String email ;
@@ -33,13 +32,10 @@ public class Contact implements Serializable{
 	
 	
 	public Contact() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	
 	public Contact(String nom, String prenom, Date dateNaissance, String email, long tel, String photo) {
-		super();
 		Nom = nom;
 		Prenom = prenom;
 		this.dateNaissance = dateNaissance;
